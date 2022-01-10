@@ -1,0 +1,73 @@
+@import "../../../styles.module.scss";
+
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: $tertiary-color;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+}
+.contact_container h2 {
+  text-align: center;
+}
+form.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: $tertiary-color;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.contact input {
+  background-color: $primary-color;
+  -webkit-appearance: none;
+  outline: none;
+  border: 2px solid $primary-color;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  height: 4ch;
+  transition: 0.5s;
+}
+.contact textarea {
+  resize: none;
+  background-color: $primary-color;
+  -webkit-appearance: none;
+  outline: none;
+  border: 2px solid $primary-color;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.contact textarea:focus {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+.contact input:focus {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+form span {
+  color: $secondary-color;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+@media (min-width: 520px) {
+  form.contact {
+    width: 50%;
+  }
+}
+.contact button {
+  margin: auto;
+  width: 50%;
+  background-color: #EEEEEE;
+  border: 2px solid #EEEEEE;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact button:hover {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}

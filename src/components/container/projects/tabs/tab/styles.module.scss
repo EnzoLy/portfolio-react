@@ -1,0 +1,16 @@
+@import "../../../../../styles.module.scss";
+
+.tab {
+  text-align: center;
+  font-size: 1.3em;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: $secondary-color;
+  font-weight: bold;
+}
+
+.tab.active {
+  border-bottom: 2px solid $secondary-color;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}

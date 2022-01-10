@@ -1,0 +1,22 @@
+@import "../../../styles.module.scss";
+
+a.navbar_item {
+  justify-content: flex-end;
+  color: $secondary-color;
+  text-decoration: none;
+  font-size: 1em;
+  margin-right: 5px;
+}
+
+a.navbar_item:hover {
+  color: $secondary-color;
+}
+
+@media (min-width: 550px) {
+
+  a.navbar_item {
+    font-size: 1.2em;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

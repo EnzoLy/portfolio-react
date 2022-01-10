@@ -1,0 +1,40 @@
+@import '../../../styles.module.scss';
+
+.footer_item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 1em;
+  color: $secondary-color;
+  text-decoration: none;;
+  margin: auto;
+}
+
+.footer_item:hover {
+  color: rgba(20, 20, 20, 0.733)
+}
+.icon{
+  margin-left: 4.5px;
+  font-size: 1.2em;
+}
+
+@media (min-width: 550px) {
+
+  .footer_item {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2em;
+    color: $secondary-color;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .icon{
+    margin-top: 1.5px;
+    margin-left: 4.5px;
+    margin-right: 4.5px;
+    font-size: 1em;
+  }
+}
