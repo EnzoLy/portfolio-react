@@ -1,16 +1,22 @@
-@import '../../styles.module.scss';
+@import "../../styles.module.scss";
 
 .footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: $primary-color;
-  width: 80%;
-  padding: 15px;
+  width: 100%;
+  padding: 25px;
   border-radius: 0%;
   margin: auto;
   border-radius: 5px;
   box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.2);
   font-weight: bold;
   margin-top: 10px;
+}
+
+@media (min-width: 520px) {
+  .footer {
+    width: 80%;
+  }
 }
