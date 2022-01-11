@@ -1,7 +1,9 @@
 import styles from './styles.module.scss'
-import { FaGithub } from 'react-icons/fa'
+import { ReactIcon, ViteIcon, NextJsIcon, GitHubIcon } from '../../../icons/Icons'
 
-export const Project = ({ title, url, imgUrl, recent }) => {
+export const Project = ({ title, url }) => {
+  console.log(window.matchMedia('(min-width: 1288px)').matches)
+
   return (
     <div className={`${styles.project}`}>
       <header>
@@ -10,12 +12,14 @@ export const Project = ({ title, url, imgUrl, recent }) => {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
         </p>
         <div>
-          <a href='#'> Visit </a>
+          <div className={styles.item}><h3>Made with: </h3></div>
+          <div className={styles.item}><ReactIcon /></div>
+          <div className={styles.item}><ViteIcon /></div>
+          <div className={styles.item}><NextJsIcon /></div>
         </div>
+        <a href='#' className={styles.visit}> Visit </a>
       </header>
-      <a className={styles.icon} href='https://github.com/enzoly' target='_blank' rel='noreferrer'>
-        <FaGithub />
-      </a>
+      <footer><GitHubIcon href='https://github.com/enzoly' styles={{ marginTop: '100px' }} /></footer>
     </div>
   )
 }

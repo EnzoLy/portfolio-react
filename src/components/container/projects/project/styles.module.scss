@@ -4,10 +4,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   width: 60%;
   transition: 0.5s;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px 0px #3f007171;
   border-radius: 5px;
   margin-bottom: 10px;
   padding-right: 10px;
@@ -19,30 +19,40 @@
   margin-left: 10px;
   margin-bottom: 10px;
 }
+.item{
+  margin-left: 2px;
+  margin-right: 2px;
+}
 
 .project header h2 {
+  color: $fourth-color;
   text-align: left;
   margin-bottom: 0px;
   transition: 0.5s;
 }
-.project header div a {
-  width: 100%;
-  padding-left: 5px;
-  padding-right: 6px;
+
+.project header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.visit {
+  margin: auto;
+  width: 70%;
   text-align: center;
-  font-size: 1.3em;
   color: $secondary-color;
   border-radius: 5px;
   border: 1px solid $secondary-color;
   font-weight: 600;
   transition: 0.5s;
-  margin-left: 10px;
-  margin-right: 10px;
+  height: 25px;
+  font-size: 1.1em;
 }
-
-.project header div a:hover {
-  border: 1px solid #52057B;
-  color: #52057B;
+.visit:hover {
+  border: 1px solid $fourth-color;
+  color: $fourth-color;
 }
 
 .project p {
@@ -50,19 +60,16 @@
   color: $secondary-color;
 }
 
-.icon {
-  font-size: 2em;
-  color: $secondary-color;
-  margin: auto;
-}
-
 @media (min-width: 1288px) {
-  .icon {
-    margin: 0;
-    margin-top: 50px;
+  .project {
+    justify-content: space-between;
   }
 
-  .project header a {
-    width: 20%;
+  .visit {
+    margin: 0;
+    width: 15%;
+  }
+  .project footer{
+    margin-top: 100px;
   }
 }
