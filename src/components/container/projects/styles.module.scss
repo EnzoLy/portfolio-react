@@ -11,18 +11,18 @@
 .projects_container h2 {
   color: $secondary-color;
   font-size: 1.3em;
-  margin-right: 10px;
-  margin-left: 10px;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
 .projects {
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  display: flex;
+  align-items: center;
+  width: 100%;
   margin-bottom: 20px;
   margin-left: 10px;
   margin-right: 10px;

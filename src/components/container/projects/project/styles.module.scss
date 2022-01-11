@@ -1,28 +1,68 @@
 @import "../../../../styles.module.scss";
 
 .project {
-  padding-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
-  flex: 1 1 21%;
-  text-align: center;
-  border: 2px solid $tertiary-color;
-  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
   transition: 0.5s;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+.project header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
-.project:hover {
-  border: 2px solid rgba(0, 0, 0, 0.2);
+.project header h2 {
+  text-align: left;
+  margin-bottom: 0px;
+  transition: 0.5s;
 }
-
-.project img {
+.project header div a {
   width: 100%;
-  max-width: 200px;
-  height: auto;
+  padding-left: 5px;
+  padding-right: 6px;
+  text-align: center;
+  font-size: 1.3em;
+  color: $secondary-color;
+  border-radius: 5px;
+  border: 1px solid $secondary-color;
+  font-weight: 600;
+  transition: 0.5s;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-#recent {
-  flex: 5 1 100%;
+.project header div a:hover {
+  border: 1px solid #52057B;
+  color: #52057B;
+}
+
+.project p {
+  font-size: 1.3em;
+  color: $secondary-color;
+}
+
+.icon {
+  font-size: 2em;
+  color: $secondary-color;
+  margin: auto;
+}
+
+@media (min-width: 1288px) {
+  .icon {
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .project header a {
+    width: 20%;
+  }
 }
