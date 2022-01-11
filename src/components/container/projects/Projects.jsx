@@ -89,7 +89,6 @@ export const Projects = () => {
   }, [activeTab]) */
 
   const handleTabClick = useCallback((index, event) => {
-    console.log(event)
     event.preventDefault()
     setActiveTab(index)
   }, [])
