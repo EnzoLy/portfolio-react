@@ -2,6 +2,7 @@
   "name": "portofolio-react",
   "version": "0.0.0",
   "scripts": {
+    "deploy": "vercel",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -18,9 +19,6 @@
     "vite": "2.7.10"
   },
   "eslintConfig": {
-    "extends": "./node_modules/standard/eslintrc.json",
-    "globals": {
-      "internetExplorer": false
-    }
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }
