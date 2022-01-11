@@ -1,92 +1,16 @@
 import { Project } from './project/Project'
 import styles from './styles.module.scss'
 import { Tabs } from './tabs/Tabs'
-import { useState, useCallback } from 'react'
-
-const projects = [
-  {
-    tab: 0,
-    title: 'Project 1',
-    url: '#',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    recent: true
-  }, {
-    tab: 0,
-    title: 'Project 2',
-    url: '#',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    recent: false
-  }, {
-    tab: 0,
-    title: 'Project 3',
-    url: '#',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    recent: false
-  }, {
-    tab: 0,
-    title: 'Project 4',
-    url: '#',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    recent: false
-  },
-  {
-    tab: 1,
-    title: 'Project 5',
-    url: '#',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    recent: true
-  }, {
-    tab: 1,
-    title: 'Project 6',
-    url: '#',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    recent: false
-  }, {
-    tab: 1,
-    title: 'Project 7',
-    url: '#',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    recent: false
-  }, {
-    tab: 1,
-    title: 'Project 8',
-    url: '#',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    recent: false
-  },
-  {
-    tab: 2,
-    title: 'Project 9',
-    url: '#',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    recent: true
-  }, {
-    tab: 2,
-    title: 'Project 10',
-    url: '#',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    recent: false
-  }, {
-    tab: 2,
-    title: 'Project 11',
-    url: '#',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    recent: false
-  }, {
-    tab: 2,
-    title: 'Project 12',
-    url: '#',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    recent: false
-  }
-]
+import { useState, useCallback, useEffect } from 'react'
+import { getAllProjects } from '../../../services/getAllProjects'
 
 export const Projects = () => {
   const [activeTab, setActiveTab] = useState(0)
+  const [projects, setProjects] = useState([])
 
-  /* useEffect(() => {
-    console.log('useEffect')
-  }, [activeTab]) */
+  useEffect(() => {
+    getAllProjects(activeTab).then(projects => setProjects(projects))
+  }, [activeTab])
 
   const handleTabClick = useCallback((index, event) => {
     event.preventDefault()
@@ -94,12 +18,12 @@ export const Projects = () => {
   }, [])
 
   return (
-    <section id='#projects' className={styles.projects_container}>
+    <section className={styles.projects_container}>
       <h2>Projects</h2>
       <Tabs activeTab={activeTab} handleTabClick={handleTabClick} />
-      <article className={styles.projects}>
+      <article id='#projects' className={styles.projects}>
         {
-          projects.filter(project => project.tab === activeTab).map((project, index) => {
+          projects.map((project, index) => {
             return <Project key={index} {...project} />
           })
         }
