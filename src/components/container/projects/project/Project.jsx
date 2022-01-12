@@ -19,7 +19,7 @@ export const Project = ({ title, url }) => {
         </div>
         <a href='#' className={styles.visit}> Visit </a>
       </header>
-      <footer><GitHubIcon href='https://github.com/enzoly' styles={{ marginTop: '100px' }} /></footer>
+      <footer><GitHubIcon href='https://github.com/enzoly' styles={{ fontSize: '2.5em' }} /></footer>
     </div>
   )
 }
