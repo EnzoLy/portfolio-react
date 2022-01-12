@@ -1,7 +1,7 @@
 import styles from './styles.module.scss'
-import { ReactIcon, ViteIcon, NextJsIcon, GitHubIcon } from '../../../icons/Icons'
+import { GitHubIcon, IconByName } from '../../../icons/Icons'
 
-export const Project = ({ title, url }) => {
+export const Project = ({ title, url, teconologies }) => {
   console.log(window.matchMedia('(min-width: 1288px)').matches)
 
   return (
@@ -13,9 +13,15 @@ export const Project = ({ title, url }) => {
         </p>
         <div>
           <div className={styles.item}><h3>Made with: </h3></div>
-          <div className={styles.item}><ReactIcon /></div>
-          <div className={styles.item}><ViteIcon /></div>
-          <div className={styles.item}><NextJsIcon /></div>
+          {
+              teconologies.map((teconology, index) => {
+                return (
+                  <div className={styles.item} key={index}>
+                    <IconByName name={teconology} />
+                  </div>
+                )
+              })
+            }
         </div>
         <a href='#' className={styles.visit}> Visit </a>
       </header>
