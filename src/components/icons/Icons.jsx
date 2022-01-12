@@ -1,11 +1,12 @@
 import { FaGithub, FaReact, FaTwitter, FaJava, FaNodeJs } from 'react-icons/fa'
-import { SiNextdotjs, SiVite, SiKotlin, SiJavascript, SiExpress } from 'react-icons/si'
+import { SiNextdotjs, SiVite, SiKotlin, SiExpress } from 'react-icons/si'
+import { DiJavascript1 } from 'react-icons/di'
 
 const deafultIconStyles = {
   fontSize: '1.6em',
-  marginLeft: '5px',
-  marginRight: '5px',
-  marginTop: '10px'
+  marginLeft: '2px',
+  marginRight: '2px',
+  marginTop: '15px'
 }
 
 export const GitHubIcon = ({ href, styles }) => {
@@ -66,8 +67,8 @@ export const KotlinIcon = ({ styles }) => {
 
 export const JavascriptIcon = ({ styles }) => {
   return (
-    <a href='https://www.javascript.com/' style={{ ...deafultIconStyles, color: '#f0db4f', ...styles }} target='_blank' rel='noreferrer'>
-      <SiJavascript />
+    <a href='https://www.javascript.com/' style={{ ...deafultIconStyles, color: '#efd81d', ...styles, fontSize: '2em' }} target='_blank' rel='noreferrer'>
+      <DiJavascript1 />
     </a>
   )
 }
