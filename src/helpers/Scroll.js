@@ -1,12 +1,9 @@
 export function scrollTo (elementID, delay = null, behavior = 'smooth') {
   if (typeof window === 'undefined') {
-    // console.log("no window");
     return
   }
 
   const element = document.getElementById(elementID)
-
-  console.log(element)
 
   window.requestAnimationFrame(() => {
     let offset = element.offsetTop
