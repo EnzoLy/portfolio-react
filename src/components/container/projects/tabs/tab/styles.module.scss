@@ -9,6 +9,7 @@
   font-weight: bold;
   border-bottom: 3px solid $primary-color;
   cursor: pointer;
+  transition: 0.5s ease-out;
 }
 
 .tab.active {
