@@ -1,5 +1,5 @@
-import { FaGithub, FaReact, FaTwitter } from 'react-icons/fa'
-import { SiNextdotjs, SiVite } from 'react-icons/si'
+import { FaGithub, FaReact, FaTwitter, FaJava, FaNodeJs } from 'react-icons/fa'
+import { SiNextdotjs, SiVite, SiKotlin, SiJavascript, SiExpress } from 'react-icons/si'
 
 const deafultIconStyles = {
   fontSize: '1.6em',
@@ -46,4 +46,71 @@ export const TwitterIcon = ({ href, styles }) => {
       <FaTwitter />
     </a>
   )
+}
+
+export const JavaIcon = ({ styles }) => {
+  return (
+    <a href='https://www.java.com/' style={{ ...deafultIconStyles, color: '#cc0001', ...styles }} target='_blank' rel='noreferrer'>
+      <FaJava />
+    </a>
+  )
+}
+
+export const KotlinIcon = ({ styles }) => {
+  return (
+    <a href='https://kotlinlang.org/' style={{ ...deafultIconStyles, color: '#7f52ff', ...styles }} target='_blank' rel='noreferrer'>
+      <SiKotlin />
+    </a>
+  )
+}
+
+export const JavascriptIcon = ({ styles }) => {
+  return (
+    <a href='https://www.javascript.com/' style={{ ...deafultIconStyles, color: '#f0db4f', ...styles }} target='_blank' rel='noreferrer'>
+      <SiJavascript />
+    </a>
+  )
+}
+
+export const NodeJsIcon = ({ styles }) => {
+  return (
+    <a href='https://nodejs.org/' style={{ ...deafultIconStyles, color: '#5d9353', ...styles }} target='_blank' rel='noreferrer'>
+      <FaNodeJs />
+    </a>
+  )
+}
+
+export const IconExpressJS = ({ styles }) => {
+  return (
+    <a href='https://expressjs.com/' style={{ ...deafultIconStyles, color: '#3f3f3f', ...styles }} target='_blank' rel='noreferrer'>
+      <SiExpress />
+    </a>
+  )
+}
+
+export const IconByName = ({ name }) => {
+  switch (name.toLowerCase()) {
+    case 'github':
+      return <GitHubIcon />
+    case 'nextjs':
+      return <NextJsIcon />
+    case 'react':
+      return <ReactIcon />
+    case 'vite':
+      return <ViteIcon />
+    case 'twitter':
+      return <TwitterIcon />
+    case 'java':
+      return <JavaIcon />
+    case 'kotlin':
+      return <KotlinIcon />
+    case 'javascript':
+      return <JavascriptIcon />
+    case 'nodejs':
+      return <NodeJsIcon />
+    case 'expressjs':
+      return <IconExpressJS />
+    default:
+      return null
+  }
 }
