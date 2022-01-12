@@ -21,7 +21,7 @@ export const Projects = () => {
     <section className={styles.projects_container}>
       <h2>Projects</h2>
       <Tabs activeTab={activeTab} handleTabClick={handleTabClick} />
-      <article id='#projects' className={styles.projects}>
+      <article id='projects' className={styles.projects}>
         {
           projects.map((project, index) => {
             return <Project key={index} {...project} />

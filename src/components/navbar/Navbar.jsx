@@ -8,7 +8,7 @@ export const Navbar = () => {
       <NavBarBrand name='Logo' href='/' />
       <NavBarItem name='About Me' href='#aboutme' />
       <NavBarItem name='Projects' href='#projects' />
-      <NavBarItem name='Contact' href='#conctact' />
+      <NavBarItem name='Contact' href='#contact' />
     </nav>
   )
 }
