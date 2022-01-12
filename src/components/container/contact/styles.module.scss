@@ -7,9 +7,15 @@
   background-color: $primary-color;
   box-shadow: 0px 2px 5px 0px $shadow-color;
 }
-.contact_container h2 {
+.contact_container h2{
   text-align: center;
 }
+.contact_container h3{
+  text-align: center;
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
 form.contact {
   display: flex;
   flex-direction: column;
@@ -62,6 +68,16 @@ form span {
   transition: 0.3s;
   box-shadow: 0px 2px 5px 0px $shadow-color;
 }
+
+.socials{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
 @media (min-width: 520px) {
   form.contact {
     width: 50%;
