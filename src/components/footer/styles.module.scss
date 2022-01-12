@@ -13,9 +13,10 @@
   box-shadow: 0px -2px 5px 0px $shadow-color;
   font-weight: bold;
   margin-top: 10px;
+  transition: 0.5s
 }
 
-@media (min-width: 520px) {
+@media (min-width: 560px) {
   .footer {
     width: 80%;
   }
