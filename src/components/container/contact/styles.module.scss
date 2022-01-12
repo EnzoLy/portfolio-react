@@ -36,14 +36,15 @@ form span {
 .contact input {
   font-family: $font;
   font-size: 1.1em;
+  padding: 10px;
   background-color: $primary-color;
   -webkit-appearance: none;
   outline: none;
-  border: 1px solid $fourth-color;
   height: 5ch;
   transition: 0.5s;
   border-radius: 5px;
-  box-shadow: 0px 2px 5px 0px $shadow-color;
+  box-shadow: 0px 2px 5px 0px #829099;
+  border: 0;
 }
 .contact textarea {
   font-family: $font;
@@ -52,21 +53,25 @@ form span {
   background-color: $primary-color;
   -webkit-appearance: none;
   outline: none;
-  border: 1px solid $fourth-color;
+  padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
   transition: 0.5s;
   height: 100px;
-  box-shadow: 0px 2px 5px 0px $shadow-color;
+  box-shadow: 0px 2px 5px 0px #829099;
+  border: 0;
 }
 .contact button {
   margin: auto;
+  margin-top: 10px;
   width: 50%;
-  border: 1px solid $fourth-color;
+  border: 0;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-  box-shadow: 0px 2px 5px 0px $shadow-color;
+  box-shadow: 0px 2px 5px 0px #829099;
+  color: $secondary-color;
+  background-color: $primary-color;
 }
 
 .socials{
@@ -76,6 +81,16 @@ form span {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10px;
+}
+.email_sended{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.email_error{
+  color: #91091E;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 520px) {
