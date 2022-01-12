@@ -1,4 +1,4 @@
-import { FaGithub, FaReact } from 'react-icons/fa'
+import { FaGithub, FaReact, FaTwitter } from 'react-icons/fa'
 import { SiNextdotjs, SiVite } from 'react-icons/si'
 
 const deafultIconStyles = {
@@ -36,6 +36,14 @@ export const ViteIcon = ({ styles }) => {
   return (
     <a href='https://vitejs.dev/' style={{ ...deafultIconStyles, color: '#ffc820', ...styles }} target='_blank' rel='noreferrer'>
       <SiVite />
+    </a>
+  )
+}
+
+export const TwitterIcon = ({ href, styles }) => {
+  return (
+    <a href={href} style={{ ...deafultIconStyles, color: '#1d9bf0', ...styles }} target='_blank' rel='noreferrer'>
+      <FaTwitter />
     </a>
   )
 }
