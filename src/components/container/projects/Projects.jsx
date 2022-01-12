@@ -19,7 +19,7 @@ export const Projects = () => {
 
   return (
     <section className={styles.projects_container}>
-      <h2>Projects</h2>
+      <h2 className={styles.projects_title}>PROJECTS</h2>
       <Tabs activeTab={activeTab} handleTabClick={handleTabClick} />
       <article id='projects' className={styles.projects}>
         {

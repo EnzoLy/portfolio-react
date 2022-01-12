@@ -1,5 +1,9 @@
+import { scrollTo } from '../../../helpers/Scroll'
 import styles from './styles.module.scss'
 
 export const NavBarItem = ({ name, href }) => {
-  return <a className={styles.navbar_item} href={href}>{name}</a>
+  const onClick = () => {
+    scrollTo(href)
+  }
+  return <a className={styles.navbar_item} onClick={onClick}>{name}</a>
 }

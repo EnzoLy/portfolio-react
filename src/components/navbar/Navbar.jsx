@@ -6,9 +6,9 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <NavBarBrand name='Logo' href='/' />
-      <NavBarItem name='About Me' href='#aboutme' />
-      <NavBarItem name='Projects' href='#projects' />
-      <NavBarItem name='Contact' href='#contact' />
+      <NavBarItem name='About Me' href='aboutme' />
+      <NavBarItem name='Projects' href='projects' />
+      <NavBarItem name='Contact' href='contact' />
     </nav>
   )
 }

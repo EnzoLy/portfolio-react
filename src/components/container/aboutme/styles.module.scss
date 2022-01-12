@@ -9,8 +9,8 @@
 }
 
 .aboutme p {
-  font-size: 1em;
-  width: 50%;
+  font-size: 1.3em;
+  width: 100%;
 }
 
 .aboutme img {
@@ -19,6 +19,7 @@
   max-width: 150px;
   height: auto;
   border-radius: 100%;
+  box-shadow: 2px 2px 5px 2px #3f007171;
 }
 
 @media (min-width: 520px) {
