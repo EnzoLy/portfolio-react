@@ -61,7 +61,11 @@
   margin-top: 5px;
 }
 
-@media (min-width: 1288px) {
+.project footer{
+  margin: auto;
+}
+
+@media (min-width: 1120px) {
   .project {
     justify-content: space-between;
     width: 70%;
@@ -73,6 +77,7 @@
   }
 
   .project footer{
-    margin-top: 70px;
+    margin: 0;
+    margin-top: 60px;
   }
 }
