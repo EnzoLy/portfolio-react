@@ -3,37 +3,63 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 95%;
+  width: 100%;
+  margin: auto;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-.aboutme p {
-  font-size: 1.3em;
-  width: 100%;
+.aboutmeText {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
-.aboutme img {
+.js {
+  border-bottom: 2.5px solid #efd81d;
+}
+
+.react {
+  border-bottom: 2.5px solid #61dafb;
+}
+
+.node {
+  border-bottom: 2.5px solid #5d9353;
+}
+
+.express {
+  border-bottom: 2.5px solid #3f3f3f;
+}
+
+.mongodb {
+  border-bottom: 2.5px solid #0fa54d;
+}
+
+.java {
+  border-bottom: 2.5px solid #cc0001;
+}
+
+.kotlin {
+  border-bottom: 2.5px solid #7f52ff;
+}
+
+.nextjs {
+  border-bottom: 2.5px solid #000;
+}
+
+.redux {
+  border-bottom: 2.5px solid #ff0000;
+}
+
+.firebase {
+  border-bottom: 2.5px solid #f5a623;
+}
+
+.aboutmeImage {
   margin-right: 20px;
-  width: 100%;
   max-width: 150px;
   height: auto;
   border-radius: 100%;
   box-shadow: 2px 2px 5px 2px #829099;
-}
-
-@media (min-width: 520px) {
-
-  .aboutme img {
-    margin-right: 20px;
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 100%;
-  }
-
-  .aboutme p {
-    font-size: 1.2em;
-    width: 50%;
-  }
 }
