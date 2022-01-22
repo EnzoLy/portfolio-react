@@ -1,7 +1,6 @@
 import style from './styles.module.scss'
 import emailjs from 'emailjs-com'
 import { useState } from 'react'
-import { TwitterIcon } from '../../icons/Icons'
 
 const EmailSendedComponent = () => {
   return (
