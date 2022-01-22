@@ -12,9 +12,6 @@ export const Container = () => {
       <article className={styles.flex_item}>
         <Projects />
       </article>
-      <article className={styles.flex_item}>
-        <Contact />
-      </article>
     </div>
   )
 }
