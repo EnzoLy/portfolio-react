@@ -1,14 +1,14 @@
 import styles from './styles.module.scss'
 import { GitHubIcon, IconByName } from '../../../icons/Icons'
 
-export const Project = ({ title, teconologies, url }) => {
+export const Project = ({ title, teconologies, url, description }) => {
   return (
-    <div className={`${styles.project}`}>
+    <div
+      className={`${styles.project}`}
+    >
       <a href={url} target='_blank' rel='noreferrer'>
         <h2>{title}</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-        </p>
+        <p>{description}</p>
         <div>
           <div className={styles.item}><h3>Made with: </h3></div>
           {
