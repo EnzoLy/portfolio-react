@@ -69,16 +69,18 @@ export const Contact = () => {
           ? <EmailSendingComponent />
           : emailSend
             ? <EmailSendedComponent />
-            : <div>
-              <h2>CONTACT</h2>
-              <form className={style.contact}>
-                <span>Email </span>
-                <input type='email' name='email' placeholder='Email' required />
-                <span>Message </span>
-                <textarea name='message' placeholder='Message' required />
-                <button type='submit'>Send</button>
-              </form>
-          </div>// eslint-disable-line
+            : (
+              <div>
+                <h2>CONTACT</h2>
+                <form className={style.contact}>
+                  <span>Email </span>
+                  <input type='email' name='email' placeholder='Email' required />
+                  <span>Message </span>
+                  <textarea name='message' placeholder='Message' required />
+                  <button type='submit'>Send</button>
+                </form>
+              </div>
+              )
       }
     </section>
   )
