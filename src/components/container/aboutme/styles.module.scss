@@ -22,15 +22,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: w;
   width: 100%;
 }
 
 .skills div{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  height: 100%;
 }
 
 .skills div span{
+  flex: 1;
   margin: auto;
   margin-left: 7px;
   margin-right: 7px;
@@ -82,4 +85,11 @@
 
 .firebase {
   border-bottom: 3px solid #f5a623;
+}
+
+@media (min-width: 560px) {
+  .skills div{
+    display: flex;
+    flex-direction: row;
+  }
 }
