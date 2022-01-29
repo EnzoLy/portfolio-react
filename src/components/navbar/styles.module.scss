@@ -9,8 +9,53 @@ nav.navbar {
   border-radius: 10px 10px 0px 0px;
   box-shadow: 0px 2px 5px 0px $shadow-color;
   font-weight: bold;
-  transition: 0.5s
+  transition: 0.5s;
+  justify-content: center;
+  align-items: center;
 }
+
+.navbar_item {
+  color: $secondary-color;
+  text-decoration: none;
+  font-size: 1em;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.navbar_item:hover {
+  color: $secondary-color;
+}
+
+.navbar_brand {
+  justify-content: flex-start;
+  color: $secondary-color;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  margin-right: auto;
+}
+
+.navbar_brand:hover {
+  color: $secondary-color;
+}
+
+@media (min-width: 520px) {
+
+  a.navbar_brand {
+    font-size: 1.2em;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 550px) {
+
+  .navbar_item {
+    font-size: 1.2em;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 
 @media (min-width: 560px) {
   nav.navbar {

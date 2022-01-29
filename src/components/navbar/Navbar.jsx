@@ -1,14 +1,11 @@
 import styles from './styles.module.scss'
-import { NavBarItem } from './item/NavBarItem'
-import { NavBarBrand } from './brand/NavBarBrand'
+import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <NavBarBrand name='Logo' href='/' />
-      <NavBarItem name='About Me' href='aboutme' />
-      <NavBarItem name='Projects' href='projects' />
-      <NavBarItem name='Contact' href='contact' />
+      <Link className={styles.navbar_item} to='/'>Home</Link>
+      <Link className={styles.navbar_item} to='/contact'>Contact</Link>
     </nav>
   )
 }
