@@ -19,22 +19,23 @@ export const AboutMe = () => {
         <div className={style.skills}>
           <span>My principal skills are:</span>
           <div>
-            <span className={style.js}>JavaScript</span>
-            <span className={style.react}>React</span>
-            <span className={style.node}>NodeJs</span>
-            <span className={style.express}>ExpressJs</span>
-            <span className={style.mongodb}>MongoDB</span>
-            <span className={style.java}>Java</span>
-            <span className={style.kotlin}>Kotlin</span>
-            <span className={style.nextjs}>NextJs</span>
+            <span style={{ borderBottom: '3px solid #efd81d' }}>JavaScript</span>
+            <span style={{ borderBottom: '3px solid #61dafb' }}>React</span>
+            <span style={{ borderBottom: '3px solid #5d9353' }}>NodeJs</span>
+            <span style={{ borderBottom: '3px solid #3f3f3f' }}>ExpressJs</span>
+            <span style={{ borderBottom: '3px solid #0fa54d' }}>MongoDB</span>
+            <span style={{ borderBottom: '3px solid #cc0001' }}>Java</span>
+            <span style={{ borderBottom: '3px solid #7f52ff' }}>Kotlin</span>
+            <span style={{ borderBottom: '3px solid #000' }}>NextJs</span>
           </div>
         </div>
         <br />
         <div className={style.skills}>
           <span>And now I'm current learning:</span>
           <div>
-            <span className={style.firebase}>Firebase</span>
-            <span className={style.graphql}>GraphQL</span>
+            <span style={{ borderBottom: '3px solid #ff0000' }}>Firebase</span>
+            <span style={{ borderBottom: '3px solid #E535AB' }}>GraphQL</span>
+            <span style={{ borderBottom: '3px solid #2F74C0' }}>TypeScript</span>
           </div>
         </div>
       </div>
