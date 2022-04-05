@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Contact } from './components/contact/Contact.jsx'
 import { Container } from './components/container/Container.jsx'
@@ -43,12 +43,12 @@ const App = () => {
   )
 }
 
-ReactDOM.render(
+createRoot(
+  document.getElementById('root')
+).render(
   <BrowserRouter>
     <ThemeContextWrapper>
       <App />
     </ThemeContextWrapper>
   </BrowserRouter>
-  ,
-  document.getElementById('root')
 )
