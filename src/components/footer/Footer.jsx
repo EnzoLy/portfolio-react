@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <FooterItem title='Site made with React and Vite' Icon={[ReactIcon, ViteIcon]} />
-      <FooterItem title='Repository' href='https://github.com/EnzoLy' Icon={[GitHubIcon]} />
+      <FooterItem title='Repository' href='https://github.com/EnzoLy/portfolio-react' Icon={[GitHubIcon]} />
     </footer>
   )
 }
