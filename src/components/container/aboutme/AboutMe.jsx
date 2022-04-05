@@ -34,6 +34,7 @@ export const AboutMe = () => {
           <span>And now I'm current learning:</span>
           <div>
             <span className={style.firebase}>Firebase</span>
+            <span className={style.graphql}>GraphQL</span>
           </div>
         </div>
       </div>
