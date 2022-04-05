@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import { ThemeContext, themes } from './ThemeContext'
 
 export default function ThemeContextWrapper (props) {
-  const [theme, setTheme] = useState(themes.light)
+  const localStorageTheme = localStorage.getItem('theme')
+  const [theme, setTheme] = useState(localStorageTheme || themes.light)
 
   const changeTheme = () => {
     setTheme(theme === themes.dark ? themes.light : themes.dark)
@@ -14,6 +15,7 @@ export default function ThemeContextWrapper (props) {
     } else {
       document.documentElement.setAttribute('data-theme', theme)
     }
+    localStorage.setItem('theme', theme)
   }, [theme])
 
   return (
