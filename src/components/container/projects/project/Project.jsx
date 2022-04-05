@@ -1,7 +1,7 @@
 import styles from './styles.module.scss'
 import { GitHubIcon, IconByName } from '../../../icons/Icons'
 
-export const Project = ({ title, teconologies, url, description }) => {
+export const Project = ({ title, teconologies, url, description, github }) => {
   return (
     <div
       className={`${styles.project}`}
@@ -22,7 +22,7 @@ export const Project = ({ title, teconologies, url, description }) => {
           }
         </div>
       </a>
-      <footer><GitHubIcon href='https://github.com/enzoly' styles={{ fontSize: '2.5em', marginRight: '10px' }} /></footer>
+      <footer><GitHubIcon href={github} styles={{ fontSize: '2.5em', marginRight: '10px' }} /></footer>
     </div>
   )
 }

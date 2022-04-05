@@ -6,7 +6,8 @@ const projects = [
     imgUrl: 'https://via.placeholder.com/300x200',
     description: 'lore ipsum',
     recent: true,
-    teconologies: ['React', 'Vite']
+    teconologies: ['React', 'Vite'],
+    github: 'https://github.com/enzoly'
   }, {
     tab: 0,
     title: 'Project 2',
@@ -14,7 +15,8 @@ const projects = [
     imgUrl: 'https://via.placeholder.com/300x200',
     description: 'lore ipsum',
     recent: false,
-    teconologies: ['React', 'Vite']
+    teconologies: ['React', 'Vite'],
+    github: 'https://github.com/enzoly'
   }, {
     tab: 0,
     title: 'Project 3',
@@ -22,7 +24,8 @@ const projects = [
     imgUrl: 'https://via.placeholder.com/300x200',
     description: 'lore ipsum',
     recent: false,
-    teconologies: ['NextJs']
+    teconologies: ['NextJs'],
+    github: 'https://github.com/enzoly'
   }, {
     tab: 0,
     title: 'Project 4',
@@ -30,7 +33,8 @@ const projects = [
     imgUrl: 'https://via.placeholder.com/300x200',
     description: 'lore ipsum',
     recent: false,
-    teconologies: ['NextJs']
+    teconologies: ['NextJs'],
+    github: 'https://github.com/enzoly'
   },
   {
     tab: 1,
@@ -39,7 +43,8 @@ const projects = [
     imgUrl: 'https://via.placeholder.com/300x200',
     description: 'lore ipsum',
     recent: true,
-    teconologies: ['Java']
+    teconologies: ['Java'],
+    github: 'https://github.com/enzoly'
   }, {
     tab: 1,
     title: 'Project 6',
@@ -47,7 +52,8 @@ const projects = [
     imgUrl: 'https://via.placeholder.com/300x200',
     description: 'lore ipsum',
     recent: false,
-    teconologies: ['Java']
+    teconologies: ['Java'],
+    github: 'https://github.com/enzoly'
   }, {
     tab: 1,
     title: 'Project 7',
@@ -55,7 +61,8 @@ const projects = [
     imgUrl: 'https://via.placeholder.com/300x200',
     description: 'lore ipsum',
     recent: false,
-    teconologies: ['Kotlin']
+    teconologies: ['Kotlin'],
+    github: 'https://github.com/enzoly'
   }, {
     tab: 1,
     title: 'Project 8',
@@ -63,43 +70,18 @@ const projects = [
     imgUrl: 'https://via.placeholder.com/300x200',
     description: 'lore ipsum',
     recent: false,
-    teconologies: ['Kotlin']
+    teconologies: ['Kotlin'],
+    github: 'https://github.com/enzoly'
   },
   {
     tab: 2,
-    title: 'MichiClone',
-    url: 'https://instagram.com',
+    title: 'MichiGram',
+    url: 'https://instagram-clone-enzoly.vercel.app/',
     imgUrl: 'https://via.placeholder.com/300x200',
     description: 'A clone of Instagram but i upload images and videos of my cats',
     recent: true,
-    teconologies: ['NextJs', 'Firebase']
-  },
-  {
-    tab: 2,
-    title: 'MichiClone',
-    url: 'https://instagram.com',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    description: 'A clone of Instagram but i upload images and videos of my cats',
-    recent: true,
-    teconologies: ['NextJs', 'Firebase']
-  },
-  {
-    tab: 2,
-    title: 'MichiClone',
-    url: 'https://instagram.com',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    description: 'A clone of Instagram but i upload images and videos of my cats',
-    recent: true,
-    teconologies: ['NextJs', 'Firebase']
-  },
-  {
-    tab: 2,
-    title: 'MichiClone',
-    url: 'https://instagram.com',
-    imgUrl: 'https://via.placeholder.com/300x200',
-    description: 'A clone of Instagram but i upload images and videos of my cats',
-    recent: true,
-    teconologies: ['NextJs', 'Firebase']
+    teconologies: ['NextJs', 'Firebase'],
+    github: 'https://github.com/enzoly/michigram'
   }
 ]
 
