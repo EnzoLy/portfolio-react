@@ -11,6 +11,7 @@
   margin-bottom: 15px;
   cursor: pointer;
   transition: 0.5s ease-out;
+  position: relative;
 }
 
 .project:hover {
@@ -23,6 +24,7 @@
   text-align: left;
   margin-left: 10px;
   margin-bottom: 10px;
+  width: 100%;
 }
 .item {
   color: var(--secondary-color);
@@ -48,9 +50,10 @@
   margin-top: 5px;
 }
 
-.project footer {
-  margin-top: 30px;
-  margin-left: auto;
+.project_footer {
+  bottom: 10px;
+  position: absolute;
+  right: 0;
 }
 
 @media (min-width: 1120px) {
@@ -58,9 +61,13 @@
     justify-content: space-between;
     width: 70%;
   }
-
   .visit {
     margin: 0;
     width: 20%;
   }
+
+  .project_footer {
+    top: 30px;
+  }
+  
 }

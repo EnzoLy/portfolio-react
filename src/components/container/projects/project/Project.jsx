@@ -22,7 +22,7 @@ export const Project = ({ title, teconologies, url, description, github }) => {
           }
         </div>
       </a>
-      <footer><GitHubIcon href={github} styles={{ fontSize: '2.5em', marginRight: '10px' }} /></footer>
+      <div className={styles.project_footer}><GitHubIcon href={github} styles={{ fontSize: '2.5em', marginRight: '10px' }} /></div>
     </div>
   )
 }
