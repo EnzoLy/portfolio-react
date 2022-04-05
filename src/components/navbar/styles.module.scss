@@ -17,9 +17,11 @@ nav.navbar {
   color: var(--secondary-color);
   text-decoration: none;
   font-size: 1em;
+  margin: 0;
   margin-right: 5px;
   cursor: pointer;
-  margin: auto;
+  font-size: 1rem;
+  margin-left: 10px;
 }
 
 .navbar_item:hover {
@@ -37,23 +39,6 @@ nav.navbar {
 
 .navbar_brand:hover {
   color: var(--secondary-color);
-}
-
-@media (min-width: 520px) {
-
-  a.navbar_brand {
-    font-size: 1.2em;
-    margin-left: 20px;
-  }
-}
-
-@media (min-width: 550px) {
-
-  .navbar_item {
-    font-size: 1.2em;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 }
 
 
