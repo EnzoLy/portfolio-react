@@ -1,15 +1,18 @@
 $primary-color: #eeeeee;
-$secondary-color: #26282B;
+$secondary-color: #26282b;
 $tertiary-color: #eeeeee;
 $fourth-color: #3f0071;
 
 $shadow-color: rgba(0, 0, 0, 0.2);
 
-$font: -apple-system, BlinkMacSystemFont, Segoe UI, RoboFto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$font: -apple-system, BlinkMacSystemFont, Segoe UI, RoboFto, Oxygen, Ubuntu,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  line-height: 1.5;
+  line-height: 1.15;
 }
 
 body {
