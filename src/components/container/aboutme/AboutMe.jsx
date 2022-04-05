@@ -13,13 +13,8 @@ export const AboutMe = () => {
         />
       </div>
       <div className={style.aboutmeText}>
-        <span>
-          My name is Enzo Loyola I am a Full-Stack developer from Argentina.
-        </span>
-        <span>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-          reiciendis sequi natus
-        </span>
+        <span>My name is Enzo Loyola,</span>
+        <span>I am a Full-Stack developer from Argentina.</span>
         <br />
         <div className={style.skills}>
           <span>My principal skills are:</span>
@@ -31,13 +26,13 @@ export const AboutMe = () => {
             <span className={style.mongodb}>MongoDB</span>
             <span className={style.java}>Java</span>
             <span className={style.kotlin}>Kotlin</span>
+            <span className={style.nextjs}>NextJs</span>
           </div>
         </div>
         <br />
         <div className={style.skills}>
           <span>And now I'm current learning:</span>
           <div>
-            <span className={style.nextjs}>NextJs</span>
             <span className={style.firebase}>Firebase</span>
           </div>
         </div>
