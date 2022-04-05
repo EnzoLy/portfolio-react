@@ -3,33 +3,9 @@ const projects = [
     tab: 0,
     title: 'Project 1',
     url: 'https://github.com/enzoly',
-    description: 'lore ipsum',
+    description: 'Your website can be here',
     recent: true,
     teconologies: ['React', 'Vite'],
-    github: 'https://github.com/enzoly'
-  }, {
-    tab: 0,
-    title: 'Project 2',
-    url: 'https://github.com/enzoly',
-    description: 'lore ipsum',
-    recent: false,
-    teconologies: ['React', 'Vite'],
-    github: 'https://github.com/enzoly'
-  }, {
-    tab: 0,
-    title: 'Project 3',
-    url: 'https://github.com/enzoly',
-    description: 'lore ipsum',
-    recent: false,
-    teconologies: ['NextJs'],
-    github: 'https://github.com/enzoly'
-  }, {
-    tab: 0,
-    title: 'Project 4',
-    url: 'https://github.com/enzoly',
-    description: 'lorem ipsum',
-    recent: false,
-    teconologies: ['NextJs'],
     github: 'https://github.com/enzoly'
   },
   {
