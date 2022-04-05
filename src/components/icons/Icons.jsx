@@ -6,19 +6,21 @@ const deafultIconStyles = {
   marginTop: '10px'
 }
 
-export const GitHubIcon = ({ href, styles }) => {
+export const GitHubIcon = ({ href, styles, width = '40px', height = '40px', fill = 'black' }) => {
   return (
     <a href={href} style={{ ...deafultIconStyles, color: '#000', ...styles }} target='_blank' rel='noreferrer'>
-      <svg width='40px' height='40px' viewBox='0 0 24 24'><path fillRule='evenodd' clipRule='evenodd' d='M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z' /></svg>
+      <svg width={width} height={height} viewBox='0 0 24 24' fill={fill}>
+        <path fillRule='evenodd' clipRule='evenodd' d='M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z' />
+      </svg>
     </a>
   )
 }
 
 export const NextJsIcon = ({ styles }) => {
   return (
-    <a href='https://nextjs.org/' style={{ ...deafultIconStyles, color: '#000', ...styles }} target='_blank' rel='noreferrer'>
-      <svg width='24px' height='24px' viewBox='0 0 15 15' fill='none'>
-        <path fillRule='evenodd' clipRule='evenodd' d='M0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15 10.087 13.6902 12.3681 11.6975 13.7163L4.90687 4.20942C4.78053 4.03255 4.5544 3.95756 4.34741 4.02389C4.14042 4.09022 4 4.28268 4 4.50004V12H5V6.06027L10.8299 14.2221C9.82661 14.7201 8.696 15 7.5 15C3.35786 15 0 11.6421 0 7.5ZM10 10V4H11V10H10Z' fill='black' />
+    <a href='https://nextjs.org/' style={{ ...deafultIconStyles, color: '#fff', ...styles }} target='_blank' rel='noreferrer'>
+      <svg width='24px' height='24px' viewBox='0 0 15 15' fill='#fff'>
+        <path fillRule='evenodd' clipRule='evenodd' d='M0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15 10.087 13.6902 12.3681 11.6975 13.7163L4.90687 4.20942C4.78053 4.03255 4.5544 3.95756 4.34741 4.02389C4.14042 4.09022 4 4.28268 4 4.50004V12H5V6.06027L10.8299 14.2221C9.82661 14.7201 8.696 15 7.5 15C3.35786 15 0 11.6421 0 7.5ZM10 10V4H11V10H10Z' fill='#000000' />
       </svg>
     </a>
   )
@@ -83,35 +85,25 @@ export const JavaIcon = ({ styles }) => {
 export const KotlinIcon = ({ styles }) => {
   return (
     <a href='https://kotlinlang.org/' style={{ ...deafultIconStyles, color: '#7f52ff', ...styles }} target='_blank' rel='noreferrer'>
-      <svg width='24px' height='24px' viewBox='0 0 256 256' version='1.1' preserveAspectRatio='xMidYMid'>
+      <svg width='24px' height='24px' viewBox='0 0 125 125' data-name='Layer 1'>
         <defs>
-          <linearGradient x1='26.599%' y1='146.559136%' x2='73.8446667%' y2='52.3813953%' id='linearGradient-1'>
-            <stop stopColor='#0095D5' offset='9.677%' />
-            <stop stopColor='#238AD9' offset='30.07%' />
-            <stop stopColor='#557BDE' offset='62.11%' />
-            <stop stopColor='#7472E2' offset='86.43%' />
-            <stop stopColor='#806EE3' offset='100%' />
+          <linearGradient id='b' x1='-21.045' y1='114.925' x2='95.274' y2='-1.395' gradientUnits='userSpaceOnUse'>
+            <stop offset='.108' stop-color='#c757bc' />
+            <stop offset='.173' stop-color='#cd5ca9' />
+            <stop offset='.492' stop-color='#e8744f' />
+            <stop offset='.716' stop-color='#f88316' />
+            <stop offset='.823' stop-color='#ff8900' />
           </linearGradient>
-          <linearGradient x1='13.9840532%' y1='37.1049231%' x2='68.682392%' y2='-13.5538462%' id='linearGradient-2'>
-            <stop stopColor='#0095D5' offset='11.83%' />
-            <stop stopColor='#3C83DC' offset='41.78%' />
-            <stop stopColor='#6D74E1' offset='69.62%' />
-            <stop stopColor='#806EE3' offset='83.33%' />
+          <linearGradient id='a' x1='39.893' y1='147.552' x2='96.589' y2='90.856' gradientUnits='userSpaceOnUse'>
+            <stop offset='.296' stop-color='#00afff' />
+            <stop offset='.694' stop-color='#5282ff' />
+            <stop offset='1' stop-color='#945dff' />
           </linearGradient>
-          <linearGradient x1='-16.8361667%' y1='91.9396667%' x2='76.2191667%' y2='-1.11566667%' id='linearGradient-3'>
-            <stop stopColor='#C757BC' offset='10.75%' />
-            <stop stopColor='#D0609A' offset='21.38%' />
-            <stop stopColor='#E1725C' offset='42.54%' />
-            <stop stopColor='#EE7E2F' offset='60.48%' />
-            <stop stopColor='#F58613' offset='74.3%' />
-            <stop stopColor='#F88909' offset='82.32%' />
-          </linearGradient>
+          <linearGradient id='c' x1='-1.501' y1='34.501' x2='38.272' y2='-5.273' xlinkHref='#a' />
         </defs>
-        <g>
-          <polygon fill='url(#linearGradient-1)' points='0 256 128.426667 127.573333 256 256' />
-          <polygon fill='url(#linearGradient-2)' points='0 0 128.426667 0 0 138.666667' />
-          <polygon fill='url(#linearGradient-3)' points='128.426667 0 0 135.253333 0 256 128.426667 127.573333 256 0' />
-        </g>
+        <path fill='url(#b)' d='M62.759 0L0 65.999V125l62.669-62.779L125 0H62.759z' />
+        <path data-name='&lt;Path&gt;' fill='url(#a)' d='M0 125l62.669-62.778L125 125H0z' />
+        <path fill='url(#c)' d='M0 0h62.759L0 65.999V0z' />
       </svg>
     </a>
   )
