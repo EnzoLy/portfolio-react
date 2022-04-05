@@ -5,9 +5,9 @@
   font-size: 1.3em;
   margin-right: 10px;
   margin-left: 10px;
-  color: $secondary-color;
+  color: var(--secondary-color);
   font-weight: bold;
-  border-bottom: 3px solid $primary-color;
+  border-bottom: 3px solid var(--primary-color);
   cursor: pointer;
   transition: 0.5s ease-out;
 }
