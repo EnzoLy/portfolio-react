@@ -3,7 +3,7 @@ const deafultIconStyles = {
   fontSize: '1.6em',
   marginLeft: '2px',
   marginRight: '2px',
-  marginTop: '15px'
+  marginTop: '10px'
 }
 
 export const GitHubIcon = ({ href, styles }) => {
