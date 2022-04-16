@@ -31,15 +31,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100%;
-  width: 50%;
-  gap: 20px;
-}
-
-.skills div span{
+  flex-basis: 100%;
   flex: 1;
-  margin-left: 7px;
-  margin-right: 7px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .aboutmeImage {
@@ -54,7 +49,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 0;
+    gap: 20px;
     width: auto;
+    margin-left: 7px;
+    margin-right: 7px;
   }
 }
