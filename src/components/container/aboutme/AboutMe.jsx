@@ -9,6 +9,7 @@ export const AboutMe = () => {
           src={avatarURL}
           alt='avatar'
           width='100px'
+          height='100px'
           className={style.aboutmeImage}
         />
       </div>
@@ -36,6 +37,7 @@ export const AboutMe = () => {
             <span style={{ borderBottom: '3px solid #ff0000' }}>Firebase</span>
             <span style={{ borderBottom: '3px solid #E535AB' }}>GraphQL</span>
             <span style={{ borderBottom: '3px solid #2F74C0' }}>TypeScript</span>
+            <span style={{ borderBottom: '3px solid #000' }}>Deno</span>
           </div>
         </div>
       </div>
