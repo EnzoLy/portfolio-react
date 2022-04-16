@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 export const FooterItem = ({ title, href, Icon }) => {
   return (
     <div className={styles.footer_item_container}>
-      <div className={styles.footer_item}><a href={href} target='_blank' rel='noreferrer'>{title}</a></div>
+      <div className={styles.footer_item}>{title}</div>
       <div className={styles.icons}>
         {Icon.map((Icon, index) => {
           return (
