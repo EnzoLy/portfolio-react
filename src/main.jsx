@@ -7,6 +7,7 @@ import { Footer } from './components/footer/Footer.jsx'
 import { Navbar } from './components/navbar/Navbar.jsx'
 import ThemeContextWrapper from './contexts/ThemeContextWrapper.jsx'
 import './styles.module.scss'
+import { Helmet } from 'react-helmet'
 
 const Home = () => {
   return (
@@ -31,6 +32,11 @@ const ContactPage = () => {
 const App = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Enzo Loyola</title>
+        <meta name='description' content='Enzo Loyola Portfolio' />
+      </Helmet>
       <Navbar />
       <>
         <Routes>
