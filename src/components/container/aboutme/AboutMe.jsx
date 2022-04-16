@@ -22,7 +22,7 @@ export const AboutMe = () => {
             <span style={{ borderBottom: '3px solid #efd81d' }}>JavaScript</span>
             <span style={{ borderBottom: '3px solid #61dafb' }}>React</span>
             <span style={{ borderBottom: '3px solid #5d9353' }}>NodeJs</span>
-            <span style={{ borderBottom: '3px solid #3f3f3f' }}>ExpressJs</span>
+            <span style={{ borderBottom: '3px solid #969696' }}>ExpressJs</span>
             <span style={{ borderBottom: '3px solid #0fa54d' }}>MongoDB</span>
             <span style={{ borderBottom: '3px solid #cc0001' }}>Java</span>
             <span style={{ borderBottom: '3px solid #7f52ff' }}>Kotlin</span>
